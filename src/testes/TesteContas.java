@@ -1,5 +1,6 @@
 package testes;
 
+import modelo.Cliente;
 import modelo.ContaCorrente;
 import modelo.ContaPoupanca;
 import modelo.SaldoInsuficienteException;
@@ -8,24 +9,9 @@ public class TesteContas {
 
 	public static void main(String[] args) throws SaldoInsuficienteException{
 		
-		int a = 3;
-		int b = a / 0;
+		ContaCorrente Paulo = new ContaCorrente(222, 555);
+		Cliente c1 = new Cliente();
 		
-		
-		ContaCorrente outra = null;
-		outra.deposita(200.0); 
-					
-		ContaCorrente cc = new ContaCorrente(111, 111);
-		cc.deposita(100.0);
-		
-		ContaPoupanca cp = new ContaPoupanca(222, 222);
-		cp.deposita(200.0);
-		
-		cc.transfere(10.0, cp);
-		
-		System.out.println("CC: " + cc.getSaldo());
-		System.out.println("CP: " + cp.getSaldo());
-
 
 	}
 
